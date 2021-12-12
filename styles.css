@@ -55,6 +55,7 @@ body{
     background-image: url(images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-position: 0 -120px;
+    background-size: 100%;
 
 }
 
@@ -74,27 +75,29 @@ img{
     border-top-right-radius: 10px;
 }
 
-h3{
-    margin-top: 1.5em;
+h1{
     font-size: 1.2rem;
     font-weight: var(--Bold);
     color: var(--Dark-blue);
+    margin-bottom: 1em;
 }
 
 p.summary-details{
-    margin-bottom: .5em;
-    padding: 1.5em;
+    margin-bottom: 1.2em;
     font-size: .75rem;
     line-height: 1.5;
     font-weight: var(--Normal);
     color: var(--Desaturated-blue);
 }
 
+#body{
+    padding: 1.8em;
+}
+
 #sub-container{
     display: flex;
     justify-content: flex-start;
     background-color: var(--Very-pale-blue);
-    width: 240px;
     margin: 0 auto;
     padding: .8em .5em;
     align-items: center;
@@ -136,9 +139,7 @@ p.summary-details{
 
 .btn{
     margin: 0 auto;
-    margin-bottom: 1em;
     padding: .7em 1em;
-    width: 240px;
     border-radius: 10px;
     background-color: var(--Bright-blue);
     -webkit-box-shadow: -1px 15px 37px -16px rgba(0,0,0,1);
@@ -158,6 +159,10 @@ p.summary-details{
     font-weight: var(--Meduim);
     font-size: .7rem;
     text-decoration: none;
+}
+
+footer{
+    margin-top: -.8em;
 }
 
 .cancelOrder a {
@@ -194,6 +199,53 @@ p.summary-details{
         background-image: url(images/pattern-background-mobile.svg);
         background-repeat: no-repeat;
         background-position: center top;
+        background-size: 100%;
+    }
+
+    #body{
+        padding-top: 1.2em;
+    }
+
+    h1{
+        font-size: 1.5rem;
+        margin-bottom: .5em;
+    }
+
+    p.summary-details{
+        font-size: .9rem;
+    }
+
+    #sub-container{
+        margin-bottom: 1em;
+    }
+
+    #sub-yearly p:nth-child(1){
+        font-size: .8rem;
+        margin-bottom: .2em;
+    }
+    
+    #sub-yearly p:nth-child(2){
+        font-size: .9rem;
+    }
+
+    #sub-container img{
+        height: 40px;
+    }
+
+    .sub-changer a{
+        font-size: .8rem;
+    }
+
+    .btn{
+        padding: .8em 1em;
+    }
+
+    .btn a{
+        font-size: .8rem;
+    }
+
+    .cancelOrder a {
+        font-size: .8rem;
     }
 
 }
@@ -205,7 +257,8 @@ p.summary-details{
     }
 
     #container{
-        max-width: 300px;
+        max-width: 320px;
+        background-size: 100%;
     }
 
 }
