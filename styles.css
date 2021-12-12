@@ -83,7 +83,7 @@ h1{
 }
 
 p.summary-details{
-    margin-bottom: 1.2em;
+    margin-bottom: 1em;
     font-size: .75rem;
     line-height: 1.5;
     font-weight: var(--Normal);
@@ -202,52 +202,6 @@ footer{
         background-size: 100%;
     }
 
-    #body{
-        padding-top: 1.2em;
-    }
-
-    h1{
-        font-size: 1.5rem;
-        margin-bottom: .5em;
-    }
-
-    p.summary-details{
-        font-size: .9rem;
-    }
-
-    #sub-container{
-        margin-bottom: 1em;
-    }
-
-    #sub-yearly p:nth-child(1){
-        font-size: .8rem;
-        margin-bottom: .2em;
-    }
-    
-    #sub-yearly p:nth-child(2){
-        font-size: .9rem;
-    }
-
-    #sub-container img{
-        height: 40px;
-    }
-
-    .sub-changer a{
-        font-size: .8rem;
-    }
-
-    .btn{
-        padding: .8em 1em;
-    }
-
-    .btn a{
-        font-size: .8rem;
-    }
-
-    .cancelOrder a {
-        font-size: .8rem;
-    }
-
 }
 /* portrait e-readers, smaller tablets @600 or @640 wide*/
 @media screen and (max-width: 375px){
@@ -257,53 +211,8 @@ footer{
     }
 
     #container{
-        max-width: 320px;
+        max-width: 300px;
         background-size: 100%;
-    }
-    #body{
-        padding-top: 1.2em;
-    }
-
-    h1{
-        font-size: 1.5rem;
-        margin-bottom: .5em;
-    }
-
-    p.summary-details{
-        font-size: .9rem;
-    }
-
-    #sub-container{
-        margin-bottom: 1em;
-    }
-
-    #sub-yearly p:nth-child(1){
-        font-size: .8rem;
-        margin-bottom: .2em;
-    }
-    
-    #sub-yearly p:nth-child(2){
-        font-size: .9rem;
-    }
-
-    #sub-container img{
-        height: 40px;
-    }
-
-    .sub-changer a{
-        font-size: .8rem;
-    }
-
-    .btn{
-        padding: .8em 1em;
-    }
-
-    .btn a{
-        font-size: .8rem;
-    }
-
-    .cancelOrder a {
-        font-size: .8rem;
     }
 
 }
