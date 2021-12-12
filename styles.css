@@ -55,7 +55,6 @@ body{
     background-image: url(images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-position: 0 -120px;
-    background-size: 100%;
 
 }
 
@@ -75,29 +74,27 @@ img{
     border-top-right-radius: 10px;
 }
 
-h1{
+h3{
+    margin-top: 1.5em;
     font-size: 1.2rem;
     font-weight: var(--Bold);
     color: var(--Dark-blue);
-    margin-bottom: 1em;
 }
 
 p.summary-details{
-    margin-bottom: 1em;
+    margin-bottom: .5em;
+    padding: 1.5em;
     font-size: .75rem;
     line-height: 1.5;
     font-weight: var(--Normal);
     color: var(--Desaturated-blue);
 }
 
-#body{
-    padding: 1.8em;
-}
-
 #sub-container{
     display: flex;
     justify-content: flex-start;
     background-color: var(--Very-pale-blue);
+    width: 240px;
     margin: 0 auto;
     padding: .8em .5em;
     align-items: center;
@@ -139,7 +136,9 @@ p.summary-details{
 
 .btn{
     margin: 0 auto;
+    margin-bottom: 1em;
     padding: .7em 1em;
+    width: 240px;
     border-radius: 10px;
     background-color: var(--Bright-blue);
     -webkit-box-shadow: -1px 15px 37px -16px rgba(0,0,0,1);
@@ -161,10 +160,6 @@ p.summary-details{
     text-decoration: none;
 }
 
-footer{
-    margin-top: -.8em;
-}
-
 .cancelOrder a {
     font-size: .7rem;
     font-weight: var(--Bold);
@@ -179,7 +174,7 @@ footer{
 /* hi-res laptops and desktops */
 @media screen, (min-width: 1281px) and (max-width:1440px){
 }
-    
+
 /* big landscape tablets, laptops and desktops */
 @media screen and (max-width: 1025px){
 
@@ -199,7 +194,6 @@ footer{
         background-image: url(images/pattern-background-mobile.svg);
         background-repeat: no-repeat;
         background-position: center top;
-        background-size: 100%;
     }
 
 }
@@ -212,7 +206,6 @@ footer{
 
     #container{
         max-width: 300px;
-        background-size: 100%;
     }
 
 }
