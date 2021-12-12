@@ -1,0 +1,211 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1.2;
+}
+ol { 
+    padding-left: 1.4em;
+    list-style: decimal;
+}
+ul {
+    padding-left: 1.4em;
+    list-style: square;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* end reset browser styles */
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --Font-size: 16px;
+    --Font:'Red Hat Display', sans-serif;
+    --Normal: 500;
+    --Meduim: 700;
+    --Bold: 900;
+}
+
+body{
+    font-size: var(--Font-size);
+    font-family: var(--Font);
+    background-color: var(--Pale-blue);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 0 -120px;
+
+}
+
+#container{
+    height: 480px;
+    width: 305px;
+    margin: 4em auto;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h3{
+    margin-top: 1.5em;
+    font-size: 1.2rem;
+    font-weight: var(--Bold);
+    color: var(--Dark-blue);
+}
+
+p.summary-details{
+    margin-bottom: .5em;
+    padding: 1.5em;
+    font-size: .75rem;
+    line-height: 1.5;
+    font-weight: var(--Normal);
+    color: var(--Desaturated-blue);
+}
+
+#sub-container{
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--Very-pale-blue);
+    width: 240px;
+    margin: 0 auto;
+    padding: .8em .5em;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 1.5em;
+}
+
+#sub-container img{
+    height: 35px;
+    margin-right: 1em;
+}
+
+#sub-yearly{
+    margin-right: auto;
+}
+
+#sub-yearly p:nth-child(1){
+    font-weight: var(--Bold);
+    font-size: .7rem;
+    margin-bottom: .5em;
+    color: var(--Dark-blue);
+}
+
+#sub-yearly p:nth-child(2){
+    font-size: .8rem;
+    color: var(--Desaturated-blue);
+}
+
+.sub-changer a{
+    font-size: .7rem;
+    font-weight: var(--Meduim);
+}
+
+.sub-changer a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--Desaturated-blue);
+}
+
+.btn{
+    margin: 0 auto;
+    margin-bottom: 1em;
+    padding: .7em 1em;
+    width: 240px;
+    border-radius: 10px;
+    background-color: var(--Bright-blue);
+    -webkit-box-shadow: -1px 15px 37px -16px rgba(0,0,0,1);
+    -moz-box-shadow: -1px 15px 37px -16px rgba(0,0,0,1);
+    box-shadow: -1px 15px 37px -16px rgba(0,0,0,1);
+
+}
+
+.btn:hover{
+    background-color: var(--Desaturated-blue);
+    cursor: pointer;
+}
+
+.btn a{
+    display: block;
+    color: white;
+    font-weight: var(--Meduim);
+    font-size: .7rem;
+    text-decoration: none;
+}
+
+.cancelOrder a {
+    font-size: .7rem;
+    font-weight: var(--Bold);
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+}
+
+.cancelOrder a:hover{
+    color: var(--Dark-blue);
+}
+
+/* hi-res laptops and desktops */
+@media screen, (min-width: 1281px) and (max-width:1440px){
+}
+    
+/* big landscape tablets, laptops and desktops */
+@media screen and (max-width: 1025px){
+
+}
+    /* tablets, landscape ipad, lo-res laptops and desktops*/
+@media screen and (max-width: 961px){     
+
+}
+/* portrait tablets, portrait ipad, lanscape e-readers, landscape 800x480 or 854x840 phones*/
+@media screen and (max-width: 641px){
+}
+
+/* portrait e-readers, smaller tablets @600 or @640 wide*/
+@media screen and (max-width: 481px){
+
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+}
+/* portrait e-readers, smaller tablets @600 or @640 wide*/
+@media screen and (max-width: 375px){
+
+    body{
+        overflow: hidden;
+    }
+
+    #container{
+        max-width: 300px;
+    }
+
+}
